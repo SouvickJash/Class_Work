@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=text]:hover {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #910d0d;
+  background-color: chocolate;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+
+input[type=radio]{border:1px solid red; background-color: #910d0d; padding: 10px;}
+
+input[type=checkbox] {
+background-color: chartreuse;
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #6dd673;
+}
+
+/* .container {
+  width:1000px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border:1px solid red;
+  margin:auto;
+} */
+</style>
+</head>
+<body>
+
+<div class="container">
+  <form>
+    <label for="fname">First Name</label>
+    <input type="text" placeholder="Your first name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="India">India</option>
+      <option value="Pakistan">Pakistan</option>
+      <option value="Nepal">Nepal</option>
+      <option value="Srilanka">Srilanka</option>
+      <option value="England">England</option>
+      <option>Singapur</option>
+    </select>
+
+    <label for="Vehicle"></label>
+    <p>
+        <input type="checkbox" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" value="Aeroplane">
+        <label for="vehicle3"> I have a Aeroplane</label><br><br>
+    </p>
+
+    <label for="Gender">Gender</label><br>
+    <input type="radio" id="gender" name="gender" value="male"/>Male   
+    <input type="radio" id="gender" name="gender" value="female"/>Female 
+    <input type="radio" id="gender" name="gender" value="others"/>Others 
+    <br/> <br>
+    
+    <label for="birthday">Birthday</label>
+<input type="date"><br><br>
+
+<label for="appt">Choose a time for the meeting:</label>
+<input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+
+<input type="password">Password
+<br><br> 
+
+<input type = "file" name = "fileupload" accept = "image/*" /><br><br> 
+    <label for="Address">Address</label><br>
+    <textarea id="Address" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+    <br><br> 
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>

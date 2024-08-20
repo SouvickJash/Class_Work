@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+
+            column-count: 4;
+            column-width: 120px;
+            column-rule: brown;
+            column-rule-style: double;
+            column-rule-width: 5px;
+            word-spacing: 10px;
+            letter-spacing: 5px;
+        }
+
+input:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.94);
+}
+    </style>
+</head>
+<body>
+    <div class="container">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus ea aut nisi vel laborum quos cum nostrum iste recusandae, ipsa esse corrupti aperiam! Aliquid, culpa quaerat, quas ipsa perspiciatis quos sunt, laboriosam inventore nulla ab soluta consectetur facere eius at sed nisi error. Repudiandae ipsum officia deleniti itaque fugiat voluptas debitis tenetur laborum dolor. Velit at aspernatur iusto perferendis ut, ducimus unde. Iusto quibusdam ea praesentium nisi modi architecto nemo facere commodi similique doloremque nostrum id qui illum, labore fugit eos aspernatur magnam, harum mollitia sunt laborum, hic non. Labore delectus, beatae necessitatibus inventore aperiam quod voluptas odio voluptates vel reprehenderit dolorem quas consectetur at obcaecati eum, autem veniam nostrum iusto officiis facilis atque repellat. Voluptatibus, repellat unde officiis praesentium quidem ut iusto dicta doloribus distinctio, molestiae esse harum totam quasi doloremque quam necessitatibus? Minus, nulla? Amet, dolore a, libero possimus quasi voluptatibus ipsam aspernatur labore necessitatibus praesentium reprehenderit distinctio. Quae autem animi vel totam, nobis inventore, explicabo excepturi, quidem veniam neque tempore quibusdam dolores velit consequuntur mollitia ullam et? Soluta in ut consequatur, temporibus doloribus ab esse, illum ea, non mollitia ipsam. Distinctio consequuntur a obcaecati consequatur, temporibus voluptatem nisi esse et, fugit odio vel amet suscipit accusamus! In consectetur aspernatur, eaque accusantium impedit eligendi quos ducimus? Modi corporis ullam quisquam tempore repellendus nostrum provident, debitis unde aliquam explicabo reiciendis? Optio sequi soluta doloremque saepe suscipit minima voluptatibus nostrum tempore corporis nisi, commodi doloribus sed quae voluptates amet deserunt reprehenderit eos esse obcaecati ea qui placeat voluptatem quidem. Quam?</div>
+
+<form>
+<fieldset>
+    <label for ="firstname">First Name:</label><br>
+    <input type="text" name="name" placeholder="First Name">
+
+    <label for="lastname">Last Name:</label><br>
+    <input type="text" name="name" placeholder="Last Name"><br>
+
+    <label for="address" rows="10" cols="30"></label>
+    <textarea placeholder="Address"></textarea><br>
+
+
+    <select>
+        <option>B.sc</option>
+        <option>M.sc</option>
+        <option>PHD</option>
+    </select>
+
+    <label for="gender">Gender: </label> <br>
+    <input type="radio" id="gender" name="gender" value="male"/>Male   
+    <input type="radio" id="gender" name="gender" value="female"/>Female <br/> <br>
+    
+    <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"><br><br>   
+
+</fieldset>
+
+</form>
+
+
+<form action="/submit" method="post">
+    <input type="text" name="name" placeholder="Your name">
+    <input type="password" name="password" placeholder="Your password">
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

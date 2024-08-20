@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+a[target] {
+  background-color: yellow;
+}
+
+input[type="text"] {
+width:500px;
+background-color: bisque;
+display:block;
+}
+
+input[type="text"]:hover {
+width:500px;
+background-color: rgb(12, 114, 166);
+display:block;
+}
+
+input[type="button"]{
+  background-color: cadetblue;
+}
+
+input[type="button"]:hover{
+  background-color: rgb(185, 71, 202); 
+}
+
+div:nth-child(even)
+{
+  background-color: rgb(234, 105, 105);
+}
+
+p:nth-child(even)
+{
+  background-color: rgb(252, 106, 58);
+}
+
+
+p::before{
+  content:"India";
+  font-size: 24px;
+  color:blue;
+}
+
+</style>
+</head>
+<body>
+
+<h2>CSS [attribute] Selector</h2>
+
+<a href="https://www.facebook.com">facebook</a>
+<a href="http://www.disney.com"  target="_blank">disney</a>
+<a href="http://www.google.com" target="_top">google</a>
+
+<p></p>
+<form name="input" action="" method="get">
+Firstname:<input type="text" name="Name" value="Peter" size="20" style="background-color: blueviolet;">
+Lastname:<input type="text" name="Name" value="Griffin" size="20">
+<input type="button" value="Example Button">
+
+Country: <input type="text" disabled="disabled" value="India">
+</form>
+<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, expedita!</div>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, expedita!</p>
+<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, expedita!</div>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, expedita!</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, expedita!</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, expedita!</p>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>:root Example</title>
+<style>
+   :root {
+      --primary-color: red;
+      --secondary-color: blue;
+      --background-color: lightyellow;
+      --color:rgba(72, 3, 3, 0.452);
+      --padding:50px;
+      --padding-new:100px;
+      --margin:10px;
+      --background-color:red;
+   }
+
+   body {
+      background-color: var(--background-color);
+      color: var(--secondary-color);
+      font-family: Arial, sans-serif;
+   }
+   h1 {
+      color: var(--color);
+   }
+   p {
+      margin-bottom: 1rem;
+      color: var(--color);
+      background-color: var(--primary-color);
+      padding:var(--padding-new);
+      margin:var(--margin);
+   }
+
+   .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+   .button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      }
+</style>
+</head>
+<body>
+   <div class="container">
+      <p>Font color set to --secondary-color</p>
+      <p>The background color is set to --background-color</p>
+      <a href="#" class="button">Demo</a>
+   </div>
+</body>
+</html>
