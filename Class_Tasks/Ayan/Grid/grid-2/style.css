@@ -1,0 +1,117 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 60%;
+  height: 500px;
+  margin: auto;
+
+  margin-top: 10%;
+  background-color: rgb(255, 136, 0);
+}
+.card {
+  display: flex;
+  width: 30%;
+  height: 90%;
+  background-color:blueviolet;
+
+  margin: 20px;
+  border-radius: 4px;
+  flex-direction: column;
+  overflow: hidden;
+}
+.card-img {
+  background-image: url("./img/computer-img.jpg");
+  width: 100%;
+  background-size: cover;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.card-img1 {
+  background-image: url("./img/food-img.jpg");
+  width: 100%;
+  background-size: cover;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.card-img2 {
+  background-image: url("./img/car-img.jpg");
+  width: 100%;
+  background-size: cover;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.card-body {
+  padding: 10px;
+}
+.card-body h3 {
+  margin: 10px 0;
+}
+.card-body p {
+  margin: 0 0 10px 0; /* top,right,bottom ,left*/
+}
+.technology-btn {
+  width: 100px;
+  height: 28px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 183, 234, 0.644) 0%,
+    rgb(0, 78, 195) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.food-btn {
+  width: 100px;
+  height: 28px;
+  background: linear-gradient(
+    135deg,
+    rgba(218, 234, 0, 0.582) 0%,
+    rgb(195, 127, 0) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.automobile-btn {
+  width: 100px;
+  height: 28px;
+  background: linear-gradient(
+    135deg,
+    rgba(234, 35, 0, 0.644) 0%,
+    rgb(195, 72, 0) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.card-footer {
+  display: flex;
+
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.footer-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 8px;
+}
+
+.footer-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer-content span {
+  color: #ccc;
+}
