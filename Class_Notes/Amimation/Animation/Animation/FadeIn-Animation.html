@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.fade-out-image {
+  animation: fadeOut 5s;
+  -webkit-animation: fadeOut 5s;
+  -moz-animation: fadeOut 5s;
+  -o-animation: fadeOut 5s;
+  -ms-animation: fadeOut 5s;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  50% { opacity: 0.7;}
+  75% { opacity: 0.4;}
+  100% { opacity: 0; }
+}
+
+@-moz-keyframes fadeOut {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+
+@-webkit-keyframes fadeOut {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+
+@-o-keyframes fadeOut {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+
+@-ms-keyframes fadeOut {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0; }
+}  
+</style>
+</head>
+	
+<body>
+    <div class="fade-out-image">
+        <img src="images/flower.jpg">
+     </div>
+     
+</body>   
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(45deg, blue, red, yellow);
+}
+
+.box1:hover {
+  width: 300px;
+  height: 300px;
+  background:green;
+  transition: width 6s, height 10s;
+  transition-timing-function: linear; 
+}
+
+ #div1 {
+  transition-timing-function: ease;  
+  width: 100px;
+  height: 100px;
+  background: rgb(234, 0, 255); 
+}
+
+#div1:hover {
+  transition: width 3s, height 6s;
+  transition-timing-function: ease;  
+  width: 300px;
+  height: 300px;
+  background: rgb(96, 12, 170); 
+}
+
+#div2 {
+  transition-timing-function: linear;
+  width: 100px;
+  height: 100px;
+  background: rgb(6, 236, 101); 
+}
+
+#div2:hover{
+  transition: width 3s, height 6s;
+  transition-timing-function: linear;
+  width: 300px;
+  height: 300px;
+  background: rgb(6, 236, 101); 
+}
+
+#div3 {
+  transition-timing-function: ease-in;
+  width: 100px;
+  height: 100px;
+  background: blue; 
+}
+
+#div3:hover {
+  transition: width 3s, height 6s;
+  transition-timing-function: ease-in;
+  width: 300px;
+  height: 300px;
+  background: blue; 
+}
+
+#div4 {
+  transition-timing-function: ease-out;
+  width: 100px;
+  height: 100px;
+  background: rgb(204, 252, 9); 
+}
+
+#div4:hover {
+  transition: width 3s, height 6s;
+  transition-timing-function: ease-out;
+  width: 300px;
+  height: 300px;
+  background: rgb(204, 252, 9);
+} 
+
+
+#div5 {
+  transition-timing-function: ease-out;
+  width: 100px;
+  height: 100px;
+  background: rgb(145, 2, 168); 
+}
+
+#div5:hover {
+  transition-timing-function: ease-out;
+  transition: width 3s, height 6s;
+  width: 300px;
+  height: 300px;
+  background: rgb(186, 129, 195); 
+}
+/* ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+linear - specifies a transition effect with the same speed from start to end
+ease-in - specifies a transition effect with a slow start
+ease-out - specifies a transition effect with a slow end
+ease-in-out - specifies a transition effect with a slow start and end */
+</style>
+</head>
+<body>
+
+<div class="box1"></div>
+<div id="div1">ease</div>
+<div id="div2">linear</div>
+<div id="div3">ease-in</div>
+<div id="div4">ease-out</div>
+<div id="div5">ease-in-out</div> 
+
+</body>
+</html>
