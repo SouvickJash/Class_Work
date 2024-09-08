@@ -1,0 +1,253 @@
+*{
+    margin: 0px auto;
+    font-family: sans-serif;
+    color:whitesmoke;
+   
+}
+
+.container{
+    width: 50%;
+    /* height: 700px; */
+    gap:10px;
+    border: 2px solid  #0000ff;
+}
+.top{
+    /* flex-direction: column; */
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    background-color: rgb(143, 143, 145);
+    height: 30px;
+}
+.first{
+    width: 50%;
+    text-align: left;
+}
+.second{
+    width: 50%;
+    text-align: right;
+}
+/* header {
+    height: 10px;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(155, 176, 190);
+
+} */
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.date {
+    margin-right: 10px;
+    font-size: 18px;
+    text-align: right;
+}
+h1 {
+    margin: 0;
+    /* width: 100%; */
+    height: auto; 
+    color: black;
+    font-size: 76px; 
+    line-height: 1.1; 
+    text-align: center;
+    overflow: hidden; 
+    
+}
+.box{
+    display: flex;
+
+}
+.col1,.col2,.col3,.col4{
+    width: 100%;
+    height: 180px;
+}
+.col1{
+    /* background-color: aqua; */
+    background-image: url('../Image/comment_pic.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.col2{
+    background-color: rgb(156, 219, 166);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* .col2 h3 {
+    font-size: 18px; 
+} */
+
+.col2 p {
+    margin: 0;
+    font-size: 12px; 
+    line-height: 1.5; 
+    text-align: justify;
+}
+.col3{
+    /* background-color: blue; */
+    background-image: url('../Image/comment_pic3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.col4{
+    background-color: rgb(155, 176, 190);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.col4 h3 {
+    font-size: 18px; 
+}
+
+.col4 p {
+    margin: 0;
+    font-size: 12px; 
+    line-height: 1.5; 
+    text-align: justify;  /*equal*/
+
+}
+
+.img_mid{
+    display: flex;
+    background-image: url('../Image/comment_pic2.jpeg');
+    height: 300px;
+    margin-top: 10px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.last{
+    margin-top: 10px;
+    display: flex;
+    gap:10px
+}
+.one,.two,.three{
+    width: 100%;
+    height: 180px;
+}
+.one{
+    background-color: rgb(155, 176, 190);
+
+    padding: 15px;
+    box-sizing: border-box;
+}
+.two{
+    background-color: rgb(156, 219, 166);
+    padding: 15px;
+    box-sizing: border-box;
+}
+.three{
+    background-color: rgb(155, 176, 190)
+}
+
+.one h3 {
+    font-size: 18px; 
+    align-items: center;
+    text-align: center;
+}
+
+.one p {
+    margin: 0;
+    font-size: 12px; 
+    line-height: 1.5; 
+    text-align: justify;
+}
+
+.two h3 {
+    font-size: 18px; 
+    align-items: center;
+    /* text-align: center; */
+}
+
+.two p {
+    margin: 0;
+    font-size: 12px; 
+    line-height: 1.5; 
+    text-align: justify;
+}
+
+
+.three h1{
+   color: azure;
+}
+ .three hr{
+    width: 160px;
+    /* padding-left: 10px; */
+ }
+ .three h3{
+    color: azure;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 30px;
+ }
+/* media quary */
+/* @media screen and(max-width:1200px){
+    .container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .top{
+        padding: 20px;
+        width: 80px;
+    }
+    .first{
+
+    }
+    .second{
+        
+    }
+    .box{
+        padding: 20px;
+        width: 80px;
+    }
+    .img_mid{
+        padding: 20px;
+        width: 80px;
+    }
+    .last{
+        padding: 20px;
+        width: 80px;
+    }
+} */
+
+@media screen and (max-width:500px){
+    /* .container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+       
+    } */
+    .top{
+        
+        height: 60%;
+        width: 100%;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+
+    }
+    .first{
+      width: 100%;
+      height: 50%;
+      text-align: center;
+      align-content: center;
+      /* display: block; */
+      
+    }
+    .second{
+        width: 100%;
+        height: 50%;
+        align-content: center;
+    }
+}
+
