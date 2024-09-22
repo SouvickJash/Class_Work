@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>query</title>
+    <style>
+        *{
+            margin: auto;
+            box-sizing: border-box;
+            text-align:center;
+    }
+     .container{
+        width:100%;
+        padding-left: 15px;
+        padding-right: 15px;
+     }
+
+    .row{
+        display:flex;
+        gap:10px;
+    }
+    
+    .left{
+        width:50%;
+        background-color: chartreuse;      
+    }
+
+    .right{
+        width:50%;
+        background-color: rgb(198, 99, 201);      
+    }
+
+
+    .new{
+     font-size: 20px;
+     text-align: left;
+     padding:10px;
+    }
+
+    .new2{
+     font-size: 20px;
+     text-align: right;
+     padding:10px;
+    }
+
+    .content{
+        font-size: 10rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .part1{
+        width:25%;
+       height: 300px;
+      background-image: url(images/beach-1751455_1280.jpg);
+      background-size: cover;
+    }
+
+    .part2{
+        width:25%;
+        height: 300px;
+        background-color: gray;
+
+    }
+
+    .part3{
+        width:25%;
+        height: 300px;
+        background-image: url(images/pexels-asad-photo-maldives-457882.jpg);
+        background-size: cover;
+    }
+
+    .part4{
+        width:25%;
+        height: 300px;
+        background-color: cyan;
+    }
+
+    .background{
+        background-image: url(images/pexels-photo-568260.jpeg);
+        height:500px;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .background h2 {
+        color:rgb(255, 255, 255);
+        font-size: 72px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        padding-top: 350px;
+    }
+
+    .left1{
+        width:33.33%;
+        height:300px;
+        padding:20px;
+        background-color: brown;
+        overflow: scroll;
+    }
+    .left2{
+        width:33.33%;
+        height:300px;
+        padding:20px;
+        background-color: rgb(165, 42, 165);
+        overflow: scroll;
+    }
+
+    .left3{
+        width:33.33%;
+        height:300px;
+        padding:20px;
+        background-color: rgb(91, 26, 182);
+        overflow: scroll;
+    }
+
+
+    h3{
+        font-size:72px;
+   color:white;
+   font-family: Arial, Helvetica, sans-serif;
+    }
+    h4{
+        font-size:72px;
+   color:white;
+   font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .text3{
+        padding-top: 50px;
+        font-size: 36px;
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+p{
+    
+}
+    @media screen and (min-width:800px){
+        .row{
+        display:flex;
+        gap:10px;
+        flex-wrap: wrap;        
+    }
+
+    
+    .part1{
+        width:100%;
+       height: 300px;
+      background-image: url(images/beach-1751455_1280.jpg);
+      background-size: cover;
+    }
+
+    .part2{
+        width:100%;
+        height: 300px;
+        background-color: gray;
+    }
+
+    .part3{
+        width:100%;
+        height: 300px;
+        background-image: url(images/pexels-asad-photo-maldives-457882.jpg);
+        background-size: cover;
+    }
+
+    .part4{
+        width:100%;
+        height: 300px;
+        background-color: cyan;
+    }
+
+
+    
+    .left1{
+        width:100%;
+        height:300px;
+        padding:20px;
+        background-color: brown;
+        overflow: scroll;
+    }
+    .left2{
+        width:100%;
+        height:300px;
+        padding:20px;
+        background-color: rgb(165, 42, 165);
+        overflow: scroll;
+    }
+
+    .left3{
+        width:100%;
+        height:300px;
+        padding:20px;
+        background-color: rgb(91, 26, 182);
+        overflow: scroll;
+    }
+
+
+    .background h2 {
+        color:rgb(255, 255, 255);
+        font-size: 72px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        padding-top: 250px;
+    }
+
+    .left{
+        width:100%;
+        background-color: chartreuse; 
+        text-align: center;     
+    }
+
+    .right{
+        width:100%;
+        background-color: rgb(198, 99, 201); 
+        text-align: center;        
+    }
+
+    .content{
+        font-size: 3rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
+    .new{
+     font-size: 20px;
+     text-align: center;
+     padding:10px;
+    }
+
+    .new2{
+     font-size: 20px;
+     text-align: center;
+     padding:10px;
+    }
+
+    }
+    </style>
+</head>
+<body>
+    <section class="header">
+    <div class="container">
+        <div class="row">
+            <div class="left">
+                <h1 class="new">Travel to page</h1>
+            </div>
+            <div class="right">
+                <h1 class="new2">Date</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text">
+    <div class="container">
+        <div class="content">Time to Travel</div>
+    </div>
+</section>
+
+<section class="pic">
+    <div class="container">
+        <div class="row">
+<div class="part1"></div>
+<div class="part2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum repellat impedit quasi, modi laudantium possimus, assumenda eius sapiente repudiandae laborum quos eum. Nam, modi? Ratione, fuga, officia voluptatem culpa sed tempora mollitia fugiat eum cumque aperiam pariatur iste impedit quo! Iure iusto atque velit repudiandae ea nam eum recusandae in!</div>
+<div class="part3"></div>
+<div class="part4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium totam veritatis, voluptatibus accusamus exercitationem dolores quaerat cumque dicta! Rem minus magnam ullam odio ut. Amet numquam voluptates commodi nihil id architecto consequuntur velit quia debitis omnis placeat nostrum, magni ipsa consequatur cupiditate nobis excepturi ut laborum, vitae autem molestiae magnam.</div>
+        </div>
+    </div>
+</section>
+
+
+<section class="main">
+    <div class="container">
+       <div class="background">
+<h2>Let's Travel Together</h2>
+       </div> 
+    </div>
+</section>
+
+
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="left1">
+                <h3>Greek Food</h3>
+                <p class="text2">adipisicing elit. Harum, minima. Odit veritatis eligendi sed reiciendis repudiandae. Dolore libero vero facere in excepturi, ad sapiente eligendi tenetur, rem sed, adipisci rerum eaque! Est, ut explicabo maxime porro voluptas fugiat, autem aspernatur fuga voluptates accusamus ducimus obcaecati quasi minima veritatis rem dolores nihil aliquid aut alias impedit maiores. Magnam id, quia nemo ab maxime excepturi error voluptate nihil, rem explicabo iste saepe pariatur magni maiores dolore officiis laboriosam! Iusto, facere eos. Veniam ducimus impedit perferendis voluptatem! Sapiente a suscipit deserunt commodi ullam. Eveniet corporis architecto voluptas doloribus iure accusantium nulla labore quia?</p>
+            </div>
+            <div class="left2">
+                <h3>Dublin</h3>
+                <p class="text2">adipisicing elit. Aliquam porro ipsa nam dolorum voluptatum ut quo, dolorem praesentium deserunt sint, molestiae qui tenetur recusandae officia voluptatem ullam cumque! Beatae ducimus iste accusantium sapiente enim, animi ea aliquam quasi? Quos laboriosam porro, ipsum corrupti iste, perferendis ex minus autem asperiores veritatis delectus ducimus, ullam excepturi? Necessitatibus fugiat iste labore! Deleniti officiis quaerat explicabo? Nemo, odio aliquam harum temporibus quae tenetur labore ipsum sit, doloribus reiciendis atque? Eaque corrupti blanditiis nulla, voluptatum, quasi natus impedit temporibus unde quos odit at. Soluta debitis rerum minus, sunt ipsum ipsa. Doloribus aspernatur sed itaque cum?</p>
+            </div>
+            <div class="left3">
+                <h4>35%</h4>
+                <hr>
+                <p class="text3">Discount on trips to Greece</p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

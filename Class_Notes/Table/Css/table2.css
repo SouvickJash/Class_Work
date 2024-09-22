@@ -1,0 +1,26 @@
+* {
+    margin: auto;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    height: 200px;
+    margin-top: 20px;
+  
+  }
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: rgb(46, 85, 211);
+    color: aliceblue;
+  }
+  tr:nth-child(even) {
+    background-color: rgb(223, 223, 223);
+  }
+  
+  

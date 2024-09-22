@@ -1,0 +1,75 @@
+* {
+    margin: auto;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    height: 200px;
+    margin-top: 20px;
+  
+  }
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: rgb(16, 160, 55);
+    color: aliceblue;
+  }
+  tr:nth-child(even) {
+    background-color: rgb(223, 223, 223);
+  }
+  
+  .edit {
+  
+    background-color: white;
+    color: rgb(32, 93, 150);
+    border-color: rgb(43, 116, 211);
+    border-style: solid;
+    border-width: 1px;
+    height: 30px;
+    width: 60px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.15s;
+    color: 0.15;
+ }
+ .edit:hover {
+    background-color: rgb(43, 116, 211);
+    color: white;
+ }
+
+ .edit:active {
+    opacity: 0.7;
+ }
+
+ /* delete */
+ .delete {
+  align-items: center;
+  background-color: white;
+  /* color: rgb(32, 93, 150); */
+  color: aliceblue;
+  background-color: rgb(192, 24, 24);
+  border-color: brown;
+  border-style: solid;
+  border-width: 1px;
+  height: 30px;
+  width: 60px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 0.15s;
+  color: 0.15;
+}
+/* .delete:hover {
+  background-color: rgb(192, 24, 24);
+  color: white;
+} */
+
+/* .delete:active {
+  opacity: 0.7;
+} */

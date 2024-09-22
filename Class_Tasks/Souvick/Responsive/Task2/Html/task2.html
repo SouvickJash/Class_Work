@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"> -->
+    <title>task2</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .container {
+        width: 100%;
+        /* display: flex; */
+      }
+      img {
+        width: 160px;
+        height: 40px;
+        padding-left: 30px;
+      }
+      .row {
+        display: flex;
+        padding-top: 15px;
+        background-color: rgb(207, 211, 214);
+      }
+      .left {
+        width: 33.33%;
+        /* width: 20%; */
+        /* background-color: royalblue; */
+        /* align-content: center; */
+        /* padding-top: 20px; */
+      }
+
+      .mid {
+        display: flex;
+        width: 33.33%;
+        justify-content: flex-end;
+        padding-left: 450px;
+        padding-right: 30px;
+        font-size: 130%;
+        gap: 20px;
+        cursor: pointer;
+      }
+      .about:hover {
+        color: rgb(12, 68, 137);
+      }
+      .services:hover {
+        color: rgb(12, 68, 137);
+      }
+      .contact:hover {
+        color: rgb(12, 68, 137);
+      }
+      .end {
+        width: 33.33%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 40px;
+        gap: 10px;
+        padding-bottom: 10px;
+      }
+      .end a {
+        color: rgb(5, 28, 74);
+        font-size: 40px;
+      }
+      /* background image */
+      .bg-img {
+        background-image: url("../Images/banner-image.jpg");
+        background-size: cover;
+        height: 500px;
+      }
+      .bg-text {
+        padding-top: 70px;
+      }
+      .bg-text h1 {
+        font-size: 40px;
+        color: #fff;
+        padding-left: 50px;
+        /* margin-top: 0px; */
+      }
+
+      .bg-text p {
+        color: #fff;
+        padding-left: 50px;
+        margin: 0;
+      }
+   
+      .btn1 {
+        /* padding-left: 50px; */
+        margin-left: 50px;
+        background-color: orangered;
+        border: none;
+        height: 40px;
+        width: 160px;
+        border-radius: 5px;
+        font-size: 13px;
+        border: 1px solid transparent;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        font-family: Arial;
+      }
+      .btn1:hover {
+        background-color: rgb(33, 124, 198);
+        color: #fff;
+        box-shadow: 2px 6px 3px rgb(234, 240, 240);
+      }
+      .btn1:active {
+        opacity: 0.9;
+      }
+     
+      /* main */
+      .main {
+        display: flex;
+      }
+      .part1 {  
+        padding-left: 50px;
+        padding-top: 90px;
+        color: rgb(75, 77, 79);
+        width: 50%;
+        height: 300px;
+        text-align: justify;
+      }
+      /* .part1 h2{
+        padding-top: 10px;
+      } */
+      .btn2 {
+        background-color: white;
+        color: rgb(32, 93, 150);
+        border-color: rgb(43, 116, 211);
+        border-style: solid;
+        border-width: 1px;
+        height: 40px;
+        width: 90px;
+        margin-top: 20px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: background-color 0.15s;
+        color: 0.15;
+      }
+      .btn2:hover {
+        background-color: rgb(43, 116, 211);
+        color: white;
+      }
+
+      .btn2:active {
+        opacity: 0.7;
+      }
+
+
+
+      .part2 {
+        width: 50%;
+        height: 300px;
+        display: flex;
+        
+      }
+      .part2-img {
+        width: 90%;
+        height: 350px;
+        justify-content: flex-end;
+        padding-left: 66px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+       
+        display: block;
+      }
+
+      /* responsive  */
+      @media screen and (min-width: 200px) and (max-width: 500px) {
+        /* .container{
+            width: 100%;  
+        } */
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+        }
+        img {
+          padding-left: 10px;
+        }
+        .left {
+          width: 50%;
+          /* order: 1; */
+          /* height: 40px; */
+          /* padding-bottom: 20px; */
+        }
+        .mid {
+          width: 100%;
+          padding-left: 0px;
+          display: flex;
+          justify-content: flex-start;
+          order: 1;
+          padding-left: 10px;
+          /* height: 40px; */
+          /* margin: 0px; */
+        }
+        .end {
+          width: 50%;
+        }
+        .end a {
+          color: rgb(5, 28, 74);
+          font-size: 30px;
+        }
+        .bg-img {
+          width: 100%;
+          background-size: cover;
+          display: flex;
+          /* flex-wrap: wrap; */
+        }
+        .bg-img h1 {
+          width: 100%;
+          font-size: 25px;
+          padding-left: 10px;
+        }
+        .bg-img p {
+          width: 100%;
+          text-align: justify;
+          padding-right: 50px;
+          padding-left: 10px;
+        }
+        .btn1 {
+          margin-left: 15px;
+        /* padding-left: 10px; */
+        background-color: orangered;
+        border: none;
+        height: 40px;
+        width: 120px;
+        border-radius: 10px;
+        font-size: 9px;
+        border: 1px solid transparent;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        
+        font-family: Arial;
+      }
+      .btn1:hover {
+        background-color: rgb(33, 124, 198);
+        color: #fff;
+      }
+      .btn1:active {
+        opacity: 0.9;
+      }
+
+
+       .main{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+  
+       }
+       .part1{
+         width: 100%;
+         /* text-align: justify; */
+         order: 1;
+         padding-left: 10px;
+         padding-right: 10px;
+         padding-top: 0px;
+       }
+       .btn2:hover {
+        background-color: rgb(43, 116, 211);
+        color: white;
+      }
+
+      .btn2:active {
+        opacity: 0.7;
+      }
+       .part2{
+        width: 100%;
+        
+       }
+       .part2-img{
+        height: 300px;
+        width: 100%;
+        padding-left: 0px;
+        /* padding-right: 10px; */
+        padding-top: 5px;
+        /* border-radius: 20p  x; */
+      
+       }
+
+
+      }
+
+      /* responsive tab */
+      @media screen and (min-width: 501px) and (max-width: 800px) {
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          /* justify-content: space-around; */
+        }
+        .left {
+          width: 33.33%;
+        }
+        .mid {
+          width: 33.33%;
+          padding-left: 0px;
+          display: flex;
+          padding-left: 100px;
+          justify-content: center;
+        }
+        .end {
+          width: 33.33%;
+        }
+        .end a {
+          color: rgb(5, 28, 74);
+          font-size: 30px;
+        }
+        .bg-img {
+          width: 100%;
+          /* padding-right: 30px; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <div class="row">
+          <div class="left">
+            <img src="../Images/logo.jpeg" alt="" />
+          </div>
+          <div class="mid">
+            <div class="about">About</div>
+            <div class="services">Services</div>
+            <div class="contact">Contact</div>
+          </div>
+          <div class="end">
+            <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="background-image">
+      <div class="container">
+        <div class="bg-img">
+          <div class="bg-text">
+            <h1>Keeping famillies safe</h1>
+            <h1>from toxins & pests</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              aliquam quod incidunt repellendus
+            </p>
+            <p>
+              incidunt repellendus facilis. Quis perferendis sunt illo enim quo
+              voluptatibus
+            </p>
+            <p>aliquam animi excepturi saepe, ad, labore quisquam</p><br>
+            <button class="btn1">Book a free estimate</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main">
+      <!-- <div class="container"> -->
+      <div class="part1">
+        <h2>About us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus recusandae, iure fuga sunt perferendis tenetur atque nihil impedit modi maxime?Lorem ipsum dolor sit amet, consectetur adipisicing elit tenetur atque nihil impedit modi maxime?Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      <button class="btn2">Learn more</button>
+      </div>
+      <div class="part2">
+        <img class="part2-img" src="../Images/part2.jpg" alt="" />
+      </div>
+      <!-- </div> -->
+    </section>
+  </body>
+</html>
